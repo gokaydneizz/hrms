@@ -1,3 +1,3 @@
-# hrms
+VERI TABANI PAIR 20 DE HAZIRLANAN TABLOYA GORE YAPILMISTIR.
 
-![Sonhali](https://user-images.githubusercontent.com/77916984/120083829-3170ae00-c0d4-11eb-97bc-b10e3f89c234.png)
+![veritabani0206](https://user-images.githubusercontent.com/77916984/120456168-04efb700-c39e-11eb-9ef9-ecc4deccbe32.png)
