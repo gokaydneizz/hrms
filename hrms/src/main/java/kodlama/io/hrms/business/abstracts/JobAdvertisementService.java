@@ -9,7 +9,7 @@ import kodlama.io.hrms.entities.concretes.JobAdvertisement;
 public interface JobAdvertisementService {
 	DataResult<List<JobAdvertisement>> getAll();
 	DataResult<List<JobAdvertisement>> getAllByActive();
-	DataResult<List<JobAdvertisement>> getAllDate();
+	DataResult<List<JobAdvertisement>> getAllActiveSorted();
 	
 	Result add(JobAdvertisement jobAdvertisement);
 	

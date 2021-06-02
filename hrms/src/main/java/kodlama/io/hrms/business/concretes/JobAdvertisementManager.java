@@ -35,16 +35,13 @@ import kodlama.io.hrms.entities.concretes.JobAdvertisement;
 		}
 		
 		
-		
-
-
 		@Override
-		public DataResult<List<JobAdvertisement>> getAllDate() {
-			Sort sort = Sort.by(Sort.Direction.ASC,"applicationDeadline");
-			return new SuccessDataResult<List<JobAdvertisement>>(this.jobAdvertisementDao.findAll(sort),"Tarihe gore siralandi.");
-						
+		public DataResult<List<JobAdvertisement>> getAllActiveSorted() {
+			return new SuccessDataResult<List<JobAdvertisement>>(this.jobAdvertisementDao.getAllActiveSorted(),"Data tarihe gore listelendi.");
 		}
 
+
+		
 
 		@Override
 		public DataResult<List<JobAdvertisement>> getAllByActive() {
@@ -58,6 +55,9 @@ import kodlama.io.hrms.entities.concretes.JobAdvertisement;
 			this.jobAdvertisementDao.save(jobAdvertisement);
 			return new SuccessResult("Is ilani listeye eklendi.");
 		}
+
+
+		
 		
 		
 		

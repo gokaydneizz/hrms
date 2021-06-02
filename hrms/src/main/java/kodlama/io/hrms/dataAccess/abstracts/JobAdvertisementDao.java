@@ -11,4 +11,7 @@ public interface JobAdvertisementDao extends JpaRepository<JobAdvertisement,Inte
 	
 	@Query("From JobAdvertisement where isActive=true")
 	List<JobAdvertisement> getAllByActive();
+	
+	@Query("From JobAdvertisement where isActive=true Order By createdDate ASC")
+	List<JobAdvertisement> getAllActiveSorted();
 }
